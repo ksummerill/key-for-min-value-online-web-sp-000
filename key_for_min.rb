@@ -10,9 +10,9 @@ def key_for_min_value(name_hash)
     if name_hash == {}
        return nil
     else
-       key, value < key, value
+       
        return key
-    end   
+    end
   end
 end
 
