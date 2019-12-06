@@ -11,6 +11,10 @@ def key_for_min_value(name_hash)
 end
 
 
+# birthday_kids.collect do |name, age|
+#     age * 7
+# end
+
 
 # array = [7, 3, 1, 2, 6, 5]
 #
