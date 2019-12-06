@@ -3,10 +3,11 @@
 
 # This method should iterate over the hash and return the key (not the value!)
 # that points to the smallest value of the set
-# hash = {:blake => 500, :ashley => 2, :adam => 1}
+# hash1 = {:blake => 500, :ashley => 2, :adam => 1}
+# hash2 = {:blake => 10, :ashley => 50, :adam => 17}
 def key_for_min_value(name_hash)
   name_hash.collect  do |key, value|
-    if value < 2
+    key, value <=> key, value
     return key
     end
   end
