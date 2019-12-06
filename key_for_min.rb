@@ -3,12 +3,12 @@
 
 # This method should iterate over the hash and return the key (not the value!)
 # that points to the smallest value of the set
-hash = {:blake => 500, :ashley => 2, :adam => 1}
+# hash = {:blake => 500, :ashley => 2, :adam => 1}
 def key_for_min_value(name_hash)
-  key_for_min_value.collect  do |key, value|
+  key_for_min_value.collect  do |value|
     key <=> value
   end
-  return key_for_min_value(hash)
+  # return key_for_min_value(hash)
 end
 
 
