@@ -16,26 +16,14 @@ end
 
 
 
-# def key_for_min_value(name_hash)
-#   name_hash.collect  do |key, value|
-#     if name_hash == {}
-#        return nil
-#     else
-#        name_hash = name_hash.sort_by
-#        return key
-#     end
-#   end
-# end
-
-
-
-# birthday_kids.collect do |name, age|
-#     age * 7
-# end
-
-
-# array = [7, 3, 1, 2, 6, 5]
-#
-# array.sort do |a, b|
-#   a <=> b
-# end
+def key_for_min_value(name_hash)
+  min_key = nil
+  min_value = 1000000
+  hash.each do |k, v|
+    if v < min_value
+      min_value = value
+      min_key = key
+    end
+  end
+min_key
+end
