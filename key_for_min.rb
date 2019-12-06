@@ -7,10 +7,11 @@ hash = {:blake => 500, :ashley => 2, :adam => 1}
 def key_for_min_value(name_hash)
   key_for_min_value.sort  do |key, value|
     key <=> value
-  end  
+  end
+  key_for_min_value(hash)
 end
 
-key_for_min_value(hash)
+
 
 # array = [7, 3, 1, 2, 6, 5]
 #
