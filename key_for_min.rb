@@ -7,9 +7,12 @@
 # hash2 = {:blake => 10, :ashley => 50, :adam => 17}
 def key_for_min_value(name_hash)
   name_hash.collect  do |key, value|
-    key, value < key, value
-    return key
-
+    if name_hash == {}
+       return nil
+    else
+       key, value < key, value
+       return key
+    end   
   end
 end
 
