@@ -9,7 +9,7 @@ def key_for_min_value(name_hash)
     if name_hash == {}
        return nil
     else
-       name_hash = name_hash.sort_by {|key, value| value}
+       name_hash = name_hash.collect {|key, value| value}
        name_hash[0][0]
     end
 end
