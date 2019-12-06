@@ -22,7 +22,7 @@ end
 #     if name_hash == {}
 #        return nil
 #     else
-#        name_hash = name_hash.sort_by 
+#        name_hash = name_hash.sort_by
 #        return key
 #     end
 #   end
